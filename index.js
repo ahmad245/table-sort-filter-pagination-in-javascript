@@ -1,7 +1,8 @@
 const table = document.getElementById('table');
 
 let log = console.log;
-
+let up='arrow_drop_up';
+let down='arrow_drop_down';
 const sortTableByColumn = (table, column, asc = true) => {
     let sort = asc ? 1 : -1;
     let rows = Array.from(table.tBodies[0].querySelectorAll(`tr `));
